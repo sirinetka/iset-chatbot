@@ -1,0 +1,14 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Bonjour", "Salut", "Hello"],
+      "responses": ["Salut, comment ça va ?", "Bonjour !"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "A bientôt"],
+      "responses": ["À bientôt !", "Bonne journée !"]
+    }
+  ]
+}
