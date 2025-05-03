@@ -1,0 +1,98 @@
+/* Conteneur principal du chatbot */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+
+/* Boîte des messages */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+/* Style des messages */
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Message de l'utilisateur */
+.message.user {
+    background-color: #4A90E2;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Message du bot */
+.message.bot {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Zone de saisie et bouton */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Champ de saisie */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4A90E2;
+}
+
+/* Bouton d'envoi */
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Style de l'input et du bouton en version responsive */
+@media (max-width: 768px) {
+    .chat-container {
+        padding: 15px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
